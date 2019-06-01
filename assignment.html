@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var img = new Image();
+img.onload = function() {
+    if(this.width<600){
+        alert("upload another image")
+    }
+    else if(this.width>600){
+        alert("crop the image")
+    }
+    else if(this.width==600){
+        alert("image is correct")
+    }
+  alert(this.width + 'x' + this.height);
+}
+img.src = '/Users/alokranjan/Desktop/alok.jpg ';
+</script>
+</head>
+<body>
+</body>
+</html>
